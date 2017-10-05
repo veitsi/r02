@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
+class Commit extends Component {
+    render() {return (<p>commit has hash{this.props.hash}</p>)}
+}
 
 class App extends Component {
     renderItem(i) {
@@ -19,6 +22,7 @@ class App extends Component {
                 </p>
                 {this.renderItem(3)}
                 {this.renderItem(4)}
+                <Commit hash='sd22323df3f333'/>
 
             </div>
         );
